@@ -1,5 +1,5 @@
 # Use official OpenJDK image
-FROM openjdk:17
+FROM amazoncorretto:17
 
 # Create app directory
 WORKDIR /app
