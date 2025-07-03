@@ -17,7 +17,7 @@ public class HttpServerApp {
 
     static class MyHandler implements HttpHandler {
         public void handle(HttpExchange exchange) throws IOException {
-            String response = "Hello from Java updated task hurrah!!!!!!!!!!!!!!!!!!!!!!!!!1!";
+            String response = "Hello from Java , pipeline updated";
             exchange.sendResponseHeaders(200, response.length());
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
