@@ -14,4 +14,4 @@ echo "Pulling the Docker image..."
 docker pull "$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG"
 
 echo "Running the Docker container..."
-docker run -d -p 5000:5000 "$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG"
+docker run -d -p 8080:8080 "$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG"
